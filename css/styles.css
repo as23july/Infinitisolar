@@ -86,7 +86,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: rgb(178, 245, 145);
+  /* background-color: rgb(178, 245, 145); */
 }
 
 hr {
@@ -7744,7 +7744,7 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  /* color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important; */
 }
 
 .text-body {
@@ -7790,7 +7790,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: #b1d662;
+  background-color: rgb(178, 245, 145);
 }
 
 .bg-secondary {
@@ -11444,7 +11444,7 @@ header.masthead h1, header.masthead .h1 {
   position: flex;
   
   width: 100%;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
 }
 
 .newnew h2 {
