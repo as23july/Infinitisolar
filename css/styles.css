@@ -11472,7 +11472,7 @@ header.masthead h1, header.masthead .h1 {
 
 
 .cont-ain {
-  padding: 1px 5px;
+  padding: 0.1px;
 }
 .ca-rd:hover {
   box-shadow: 0 8px 200px 0 rgba(0,0,0,0.4);
@@ -11480,9 +11480,9 @@ header.masthead h1, header.masthead .h1 {
 .ca-rd {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 300px ;
-  height: 450px;
-  border-radius: 5px;
+  width: 350px ;
+  height: 470px;
+  border-radius: 10px;
 }
 .change-color{
   color:rgb(253, 112, 18);
@@ -11553,4 +11553,8 @@ header.masthead h1, header.masthead .h1 {
 .slider {
 	padding:0 0 24px;
 	background:no-repeat center bottom;
+}
+
+.logo{
+  border-radius: 25px;
 }
