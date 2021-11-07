@@ -10,19 +10,12 @@ class MainWindow (QMainWindow):
         self.resize(1280, 720)
 
         layout = QVBoxLayout()
-
-        combo = QComboBox()
-        combo.addItems(['easy', 'hard', 'medium'])
-        btn = QPushButton("Start")
-        btn.pressed.connect(lambda: self.show_selected(combo))
-        layout.addWidget(combo)
-        layout.addWidget(btn)
+        input_field = QLineEdit()
+        layout.addWidget(input_field)
+        input_field.returnPressed.connect(lambda: print(input_field.text()))
         widget = QWidget()
         widget.setLayout(layout)
         self.setCentralWidget(widget)
-
-    def show_selected(self, combo):
-        print(combo.currentText())
 
 
 app = QApplication([])

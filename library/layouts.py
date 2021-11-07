@@ -9,20 +9,16 @@ class MainWindow (QMainWindow):
         self.setWindowTitle("Checkboxes yayy")
         self.resize(1280, 720)
 
-        layout = QVBoxLayout()
+        stacked = QStackedLayout()
 
-        combo = QComboBox()
-        combo.addItems(['easy', 'hard', 'medium'])
-        btn = QPushButton("Start")
-        btn.pressed.connect(lambda: self.show_selected(combo))
-        layout.addWidget(combo)
-        layout.addWidget(btn)
+        stacked.addWidget(QLabel("Stuff 1"))
+        stacked.addWidget(QLabel("Stuff 2"))
+        stacked.addWidget(QLabel("Stuff 3"))
+        stacked.addWidget(QLabel("Stuff 4"))
+# 1-2-3-4
         widget = QWidget()
-        widget.setLayout(layout)
+        widget.setLayout(stacked)
         self.setCentralWidget(widget)
-
-    def show_selected(self, combo):
-        print(combo.currentText())
 
 
 app = QApplication([])

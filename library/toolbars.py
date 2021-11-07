@@ -6,23 +6,21 @@ from PyQt5.QtGui import *
 class MainWindow (QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-        self.setWindowTitle("Checkboxes yayy")
+        self.setWindowTitle("toolbar yayy")
         self.resize(1280, 720)
 
         layout = QVBoxLayout()
+        toolbar = QToolBar("my toolbar")
+        action_btn1 = QAction(QIcon("python_logo.png"), "Paint", self)
+        action_btn1.setCheckable(True)
+        toolbar.addAction(action_btn1)
+        toolbar.addSeparator()
 
-        combo = QComboBox()
-        combo.addItems(['easy', 'hard', 'medium'])
-        btn = QPushButton("Start")
-        btn.pressed.connect(lambda: self.show_selected(combo))
-        layout.addWidget(combo)
-        layout.addWidget(btn)
+        self.addToolBar(toolbar)
+
         widget = QWidget()
         widget.setLayout(layout)
         self.setCentralWidget(widget)
-
-    def show_selected(self, combo):
-        print(combo.currentText())
 
 
 app = QApplication([])
