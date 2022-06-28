@@ -11670,24 +11670,26 @@ img {
     /* max-width: 1500px; */
     /* padding: 20p 40px; */
 }
+/*
 .add_area {
-  /* float: left; */
-  width: 57%;
+  float: left;
+  width: 50%;
 }
 .contact_detail {
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 22px;
   font-weight: bold;
-  margin: 0 0 10px;
+  margin: 0 0 0px;
 }
+
 .add_box {
-  /* float: left; */
-  width: 50%;
+  float: left; 
+  width: 40%;
 }
 .add_icon {
   float: left;
-  /* margin: 8px 20px 0 0; */
+  margin: 8px 20px 0 0; 
 }
 .contact_con {
   color: black;
@@ -11709,14 +11711,59 @@ font-style: normal;
 margin: 0px;
 background: rgb(178, 245, 145) ;
 padding: 50px 15px 40px;
-}
+}*/
 .contact{
-  /* background-color: rgb(178, 245, 145) ; */
+  background-color: rgb(178, 245, 145) ;
   padding: 1rem 0;
   --bs-bg-opacity: 1;
   background-color: rgb(178, 245, 145);
 }
-/* .footer_key {
+
+.footer_key {
   float: right;
   width: 44%;
-} */
+} 
+.co{
+  box-sizing: border-box;
+  float: left;
+  width: 30.33%;
+  padding: 10px;
+  /* height: 100px; */
+}
+.ro::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .co{
+    width: 100%;
+  }
+}
+.add-icons {
+  float: left;
+  /* margin: px 10px 0 0; */
+}
+.co li a{
+  color: black;
+  display: block;
+  padding: 0 0 0 20px;
+}
+.co li {
+  color: black;
+  display: block;
+  padding: 0 0 0 20px;
+  margin: 3px 0 15px;
+}
+.as ul {
+  height: 150px;
+  list-style-type: none;
+  overflow: hidden;
+}
+.view_all {
+  font-size: 18px;
+  padding-left: 60px;
+}
+.ab{
+  padding-top: 40px;
+}
