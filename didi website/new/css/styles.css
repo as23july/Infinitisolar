@@ -3023,12 +3023,12 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #f4623a;
+  background-color: #0f5132;
   border-color: #f4623a;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #cf5331;
+  background-color: #1b1a1a;
   border-color: #c34e2e;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -11748,6 +11748,7 @@ padding: 50px 15px 40px;
   color: black;
   display: block;
   padding: 0 0 0 20px;
+  background: url(https://tiimg.tistatic.com/catalogs/template126009/bullet.png) no-repeat left center;
 }
 .co li {
   color: black;
@@ -11766,4 +11767,17 @@ padding: 50px 15px 40px;
 }
 .ab{
   padding-top: 40px;
+}
+.footer_link {
+  /* text-align: right; */
+  width: 20%;
+  background-color: #13653f;
+}
+.callto_action_buttons {
+  float: left;
+  width: 145px;
+}
+.footer_link a {
+  display: inline-table;
+  float: none;
 }
