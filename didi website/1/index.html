@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Solar</title>
+    <!-- Favicon-->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+
+        function sendmail() {
+            var name = $('#name').val();
+            var name = $('#email').val();
+            var name = $('#phone').val();
+            var name = $('#message').val();
+
+            var body = 'Name:' +name+ '<br>Email' +email+ '<br>Phone' +phone+ '<br>Message' +message;
+
+        }
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "adityasingh53368@gmail.com",
+            Password : "aditya23",
+            To : 'adityasingh53368@gmail.com',
+            From : 'adityasingh53368@gmail.com',
+            Subject : "New mail from: " + name,
+            Body : body
+        }).then(
+            message => {
+                if (message == 'OK') {
+                    alert('Your mail has been send. Thank you for contacting')
+                }
+                else {
+                    console.error(message)
+                    alert('There is error at sending mail')
+                }
+            }
+        );
+    </script>
+
+
+
+    <!-- SimpleLightbox plugin CSS-->
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Solar</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Our Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Enquiry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Welcome to Solar Energy Private Limited</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">We are the best class solar street light manufacturer based in Uttar Pradesh.
+                         We are supplying complete street light solutions pan India basis as per customer requirement.</p>
+                    <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="page-section bg-primary" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">We've got what you need!</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">Solar Energy Enterprises is based solar company located in Uttar Pradesh India specially dedicated to design, 
+                        engineering, manufacturer, and supply of complete solar street light solutions.
+                        We provide world-class solar street light designs as per customer’s requirements in all cities of India.
+                        Suntech Solar is a leading solar street light manufacturing company with all mandatory certificates and over 40 employees, two manufacturing units in India.</p>
+                    <a class="btn btn-light btn-xl" href="#services">Know More About Us!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Services<br> </h2>
+            <hr class="divider" />
+            <h5 class="text-center mt-0">We provide the following services</h5>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                        <img src="assets/img/portfolio/thumbnails/8.jpeg" width="200px" height="200px" alt="">
+                        <h3 class="h4 mb-2">Led Street Light</h3>
+                        <p class="text-muted mb-0">An LED street light is an integrated light that uses lightemitting diodes (LED) as its light source.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                        <img src="assets/img/portfolio/thumbnails/12.jpeg" width="200px" height="200px" alt="">
+                        <h3 class="h4 mb-2">AC Street Light</h3>
+                        <p class="text-muted mb-0">LED street light is an integrated light that uses light emitting diodes (LED) as its light source.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <img src="assets/img/portfolio/thumbnails/18.jpeg" width="200px" height="200px" alt="">
+                        <h3 class="h4 mb-2">Flood Light</h3>
+                        <p class="text-muted mb-0">LED flood light bulbs are highly popular for their ability to produce glare free light.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                        <img src="assets/img/portfolio/thumbnails/8.jpeg" width="200px" height="200px" alt="">
+                        <h3 class="h4 mb-2">High Mast Light</h3>
+                        <p class="text-muted mb-0">High-mast lighting is a tall pole with lighting attached to the top pointing towards the ground, usually but not always used to light a highway.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio-->
+    <div class="newnew">
+        <h2>Our Products</h2>
+        <div class="pro-con">
+          <div class="pro-bar" id="myBar"></div>
+        </div>  
+    </div>    
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/jp1.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/jp2.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/20.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/22.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/jp5.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/12.jpeg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    <p class="btn-btn"><a class="btn btn-primary btn-xl" href="check.html">Show More</a></p>
+    
+    <!-- Contact-->
+
+    
+
+
+    <div class="footer"><div class="main"><div class="add_area"><div class="contact_detail">Contact Us</div><div class="add_box">
+        <div class="add_icon"><img src="https://tiimg.tistatic.com/catalogs/template126009/add-icon.png"></div>
+        <ul>
+        <!-- <div class="co_name_small">ZIYA ENERGY SOLUTIONS</div> -->
+             
+            <li class="contact">B-161, Basement, Kanchan Kunj, Near Billal Masjid  Madanpur New Delhi - 110076, India
+        </li>
+              
+            
+            
+           <li class="contact" style="margin:12px 0 0">
+              Email : <span>08037744912</span>
+        </li>
+        <li class="contact">
+        </li><li class="contact email"><script type="text/javascript" src="https://st.tistatic.com/ver9304/js/utils/tooltip/wz_tooltip.js" defer=""></script>
+        <script type="text/javascript" src="https://st.tistatic.com/ver9304/js/utils/tooltip/tip_balloon.js" defer=""></script>
+        
+                    <a href="/contact-us.html">Send Inquiry</a>
+        
+         <style type="text/css">
+        body{height:1024px;}
+        .static_send_inq{width:157px;height:40px;padding:0;margin:0;text-align:center;background-image:url(https://tiimg.tistatic.com/new_website1/common/buttons/send-inquiry.png);background-position:top;background-repeat:no-repeat;position:fixed;right:0;bottom:65px;z-index:9999;float:right;}.static_send_inq a{width:157px;height:40px;text-align:center!important;font-family:Arial,Helvetica,sans-serif;font-weight:normal;color:#fff!important;font-size:18px!important;line-height:40px;display:block;text-decoration:none;text-shadow:.5px 1px .6px #000;filter:dropshadow(color=#000000,offx=1,offy=1);border:none;}.static_send_inq a:hover{color:#fff;text-decoration:none;background-image:url(https://tiimg.tistatic.com/new_website1/common/buttons/send-inquiry-hover.png);background-position:top;background-repeat:no-repeat;}.static_send_inq a:visited{color:#fff;text-decoration:none;}
+        </style>
+        <div class="static_send_inq"><a href="/inquiry.html">Send Inquiry</a></div>
+        
+        
+        
+         
+        </li>
+        <li class="contact" style="margin:12px 0 0">
+        </li></ul>
+        <div class="clear"></div>
+        <div class="social_icons"><table cellpadding="0" cellspacing="0" align="center"><tbody><tr><td align="center"><table class="social_network">
+         <tbody><tr>
+        <td class="social_icons">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </td>
+        </tr>
+        </tbody></table>
+        </td></tr></tbody></table></div>
+        <div class="clear"></div>
+        </div>
+        <div class="footer_key">
+        <div class="add_icon"><img src="https://tiimg.tistatic.com/catalogs/template126009/name-icon.png"></div>
+        <ul>
+              
+          <li class="contact">
+        <span>Mr AKLEEM AHAMAD</span>
+                  (<span>Proprietor</span>)
+                    </li>
+        <li class="contact">
+                      Mobile :<span>08037744912</span>
+        </li>
+              
+          </ul>
+        <div class="clear"></div>
+        </div>
+        </div>
+        <div class="footer_pro">
+            <ul>
+                <li><a href="/led-street-light.html" class="left_menu">LED Street Light</a></li>
+                <li><a href="/solar-power-systems.html" class="left_menu">All in One Solar Street Light</a></li>
+                <li><a href="/e-scooters.html" class="left_menu">LED Flood Light</a></li>
+                <li><a href="/led-bay-light.html" class="left_menu">LED Bay Light</a></li>
+                <!-- <li><a href="/solar-rooftop.html" class="left_menu">Rooftop Solar Systems</a></li> -->
+                <li><a href="/led-lights.html" class="left_menu">LED Solar Street Lights</a></li>
+                <!-- <li><a href="/street-light-drivers.html" class="left_menu">LED &amp; Solar Product &amp; Equipment</a></li> -->
+                <!-- <li><a href="/2-in-1-solar-street-light.html" class="left_menu">2 in 1 Solar Street Light</a></li> -->
+            </ul>
+            <div class="view_all2"><a href="https://www.ziyaenergy.com/products.html">View All</a></div>
+            
+        </div>
+        
+        <!-- <div class="footer_link"><a href="/contact-us.html"><div class="callto_action_buttons"> Send Inquiry</div></a> -->
+        
+        
+              <!-- <a href="javascript:open_popup('/utils/sms_now.html?id=ID__27005177__13321218__CATALOG__380__Catalogs','FREESMS','toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,left=170,top=20,width=750,height=570');"><div class="callto_action_buttons"> Send SMS</div></a>  -->
+        
+        
+        <!-- <style>
+        .video-call-icon{
+                background: linear-gradient(180deg, #ffca0a, #ffa300);
+                border-radius: 3px;
+                color: #333333;
+                display: inline;
+                padding: 6px 12px;
+                float: left;
+                margin: 0 5px 0 0;
+                border: 1px solid #e09204;
+        }
+        </style> -->
+        
+        <!-- Hello show_callme after calling function = 0 
+             Hello if disabled = 
+        -->
+        
+        
+        
+        <!--
+        Hello current date id = 8106
+        Hello current_time_id = 241
+        Hello current_dow = 5
+        Hello country_code_viaip = IN
+        -->
+        </div><div class="showcase"><li>
+        </li></div></div></div>
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+    <!-- scroll bar for image -->
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+    
+
+
+</body>
+</html>

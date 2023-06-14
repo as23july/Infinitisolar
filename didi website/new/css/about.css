@@ -25,7 +25,11 @@ body{
 .inner-container{
     width: 65%;
     float: right;
+<<<<<<< HEAD
     background-color:white;
+=======
+    background-color:rgb(178, 245, 145);
+>>>>>>> Html
     padding: 150px;
 }
 

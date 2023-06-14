@@ -3023,12 +3023,20 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
+<<<<<<< HEAD
   background-color: #f4623a;
+=======
+  background-color: #0f5132;
+>>>>>>> Html
   border-color: #f4623a;
 }
 .btn-primary:hover {
   color: #fff;
+<<<<<<< HEAD
   background-color: #cf5331;
+=======
+  background-color: #1b1a1a;
+>>>>>>> Html
   border-color: #c34e2e;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -11338,16 +11346,28 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
+<<<<<<< HEAD
     background-color: transparent;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
+=======
+    background-color: rgb(178, 245, 145);
+  }
+  /* #mainNav .navbar-brand {
+    color: rgb(6 6 6 / 70%);
+  } */
+>>>>>>> Html
   #mainNav .navbar-brand:hover {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
+<<<<<<< HEAD
     color: rgba(255, 255, 255, 0.7);
+=======
+    color: rgb(0 0 0 / 70%);
+>>>>>>> Html
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11358,7 +11378,11 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: rgb(178, 245, 145);
+>>>>>>> Html
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
@@ -11377,7 +11401,11 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
+<<<<<<< HEAD
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/first.jpg");
+=======
+  /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/first.jpg"); */
+>>>>>>> Html
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11388,10 +11416,17 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 992px) {
   header.masthead {
+<<<<<<< HEAD
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
+=======
+    /* height: 100vh; */
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: inherit;
+>>>>>>> Html
   }
   header.masthead p {
     font-size: 1.15rem;
@@ -11543,9 +11578,15 @@ header.masthead h1, header.masthead .h1 {
 
 }
 .fa {
+<<<<<<< HEAD
   padding: 20px;
   font-size: 30px;
   width: 70px;
+=======
+  /* padding: 20px; */
+  font-size: 16px;
+  /* width: 70px; */
+>>>>>>> Html
   text-align: center;
   text-decoration: none;
   margin: 1px 1px;
@@ -11563,4 +11604,224 @@ header.masthead h1, header.masthead .h1 {
 
 .logo{
   border-radius: 25px;
+<<<<<<< HEAD
+=======
+}
+
+
+
+
+/* new added */
+
+
+.mySlides {
+  display:flexbox;
+}
+img {
+  vertical-align:middle;
+}
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(178, 245, 145);
+}
+/* Caption text */
+.text {
+  /* color: #ffffff; */
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 5.5s ease;
+}
+.active,
+.dot:hover {
+  background-color: #111111;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5.1s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+.main{
+    /* margin: 0 auto; */
+    /* max-width: 1500px; */
+    /* padding: 20p 40px; */
+}
+/*
+.add_area {
+  float: left;
+  width: 50%;
+}
+.contact_detail {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 0px;
+}
+
+.add_box {
+  float: left; 
+  width: 40%;
+}
+.add_icon {
+  float: left;
+  margin: 8px 20px 0 0; 
+}
+.contact_con {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  text-align: left;
+}
+.footer_pro {
+  float: right;
+  font-size: 16px;
+  width: 32%;
+}
+.new-contact{
+color: rgb(178, 245, 145) ;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+font-style: normal;
+margin: 0px;
+background: rgb(178, 245, 145) ;
+padding: 50px 15px 40px;
+}*/
+.contact{
+  background-color: rgb(178, 245, 145) ;
+  padding: 1rem 0;
+  --bs-bg-opacity: 1;
+  background-color: rgb(178, 245, 145);
+}
+
+.footer_key {
+  float: right;
+  width: 44%;
+} 
+.co{
+  box-sizing: border-box;
+  float: left;
+  width: 30.33%;
+  padding: 10px;
+  /* height: 100px; */
+}
+.ro::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .co{
+    width: 100%;
+  }
+}
+.add-icons {
+  float: left;
+  /* margin: px 10px 0 0; */
+}
+.co li a{
+  color: black;
+  display: block;
+  padding: 0 0 0 20px;
+  background: url(https://tiimg.tistatic.com/catalogs/template126009/bullet.png) no-repeat left center;
+}
+.co li {
+  color: black;
+  display: block;
+  padding: 0 0 0 20px;
+  margin: 3px 0 15px;
+}
+.as ul {
+  height: 150px;
+  list-style-type: none;
+  overflow: hidden;
+}
+.view_all {
+  font-size: 18px;
+  padding-left: 60px;
+}
+.ab{
+  padding-top: 40px;
+}
+.footer_link {
+  /* text-align: right; */
+  width: 20%;
+  background-color: #13653f;
+}
+.callto_action_buttons {
+  float: left;
+  width: 145px;
+}
+.footer_link a {
+  display: inline-table;
+  float: none;
+>>>>>>> Html
 }
